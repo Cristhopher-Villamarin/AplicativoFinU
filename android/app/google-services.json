@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "980919011760",
+    "project_id": "aplicativo-finu",
+    "storage_bucket": "aplicativo-finu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980919011760:android:dafa9c5d49d9957ed8ee75",
+        "android_client_info": {
+          "package_name": "com.example.aplicativo_finu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980919011760-hhkas1fmapj2a1al4dtqtobim3oothfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFzMDfXa7E6U0h3MZ4c57g7PspOgmUjn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980919011760-hhkas1fmapj2a1al4dtqtobim3oothfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
