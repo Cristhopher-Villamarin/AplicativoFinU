@@ -199,7 +199,7 @@ class _CalendarioWidgetState extends State<CalendarioWidget> {
     );
     
     return Container(
-      margin: const EdgeInsets.all(4),
+      constraints: const BoxConstraints.expand(),
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(8),
@@ -245,7 +245,7 @@ class _CalendarioWidgetState extends State<CalendarioWidget> {
 
   Widget _buildCeldaExterna(DateTime dia) {
     return Container(
-      margin: const EdgeInsets.all(4),
+      constraints: const BoxConstraints.expand(),
       decoration: BoxDecoration(
         color: Colors.grey.shade100,
         borderRadius: BorderRadius.circular(8),
@@ -264,7 +264,7 @@ class _CalendarioWidgetState extends State<CalendarioWidget> {
 
   Widget _buildCeldaDeshabilitada(DateTime dia) {
     return Container(
-      margin: const EdgeInsets.all(4),
+      constraints: const BoxConstraints.expand(),
       decoration: BoxDecoration(
         color: ColorHelper.diaFueraPeriodo,
         borderRadius: BorderRadius.circular(8),

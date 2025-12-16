@@ -171,14 +171,6 @@ class EstadisticasScreen extends StatelessWidget {
 
                 const Divider(height: 1),
 
-                // Tendencia temporal
-                _buildSeccion(
-                  titulo: 'Tendencia de Gastos',
-                  child: GraficaLinea(datosTendencia: tendencia),
-                ),
-
-                const Divider(height: 1),
-
                 // Proyección
                 _buildSeccion(
                   titulo: 'Proyección',
