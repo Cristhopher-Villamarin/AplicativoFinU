@@ -7,6 +7,7 @@ import '../services/auth_service.dart';
 import '../utils/date_helper.dart';
 import '../utils/currency_helper.dart';
 import 'calendario_presupuesto_screen.dart';
+import 'historial_presupuestos_screen.dart';
 import 'login_screen.dart';
 
 /// Pantalla principal que detecta el presupuesto activo
@@ -190,6 +191,31 @@ class _MainHomePageState extends State<MainHomePage> {
                 );
               }
             },
+          ),
+          PopupMenuButton<String>(
+            icon: const Icon(Icons.more_vert, color: Colors.white),
+            onSelected: (value) {
+              if (value == 'historial') {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => HistorialPresupuestosScreen(user: widget.user),
+                  ),
+                );
+              }
+            },
+            itemBuilder: (context) => const [
+              PopupMenuItem(
+                value: 'historial',
+                child: Row(
+                  children: [
+                    Icon(Icons.history, size: 20),
+                    SizedBox(width: 12),
+                    Text('Historial'),
+                  ],
+                ),
+              ),
+            ],
           ),
         ],
       ),
